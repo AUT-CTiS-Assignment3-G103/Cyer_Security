@@ -133,15 +133,14 @@ h2.left {
     padding-top: 0;
     font-weight: 700;
 }
-.left_h2 {
-    color: rgb(128,164,236);
-}
 .contentfont{
     color: gray;
-    /* word-wrap: break-word;
-    word-break:break-all; */
 }
 .contentfont > h1{
     color: rgb(128,164,236);
     font-variant-caps: all-petite-caps;
+}
+
+.table td{
+    color: brown;
 }
