@@ -1,38 +1,55 @@
-.global{
+/* structure part*/
+.global {
+    height: 100%;
     margin: 0px;
-    background-color:rgb(207,223,248);
-    font-family:sans-serif;
+    background-color: rgb(207, 223, 248);
+    font-family: sans-serif;
 }
-/* bule */
-/* 177,207,231 */
-/* 89,151,198 */
-/* 75,139,186 */
 
-/* 207,223,248 */
-/* 169,200,242 */
-/* 128,164,236 */
-/* 223,216,243 */
-/* 224,235,247 */
-.navigation{
+.main {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    position: relative;
+}
+
+.navigation {
     width: 100%;
-    background-color:rgb(169,200,242);
+    background-color: rgb(169, 200, 242);
 }
-.navigation-title{
-    max-width: 1400px;
-    /* min-width: 760px; */
-    margin: 0px auto;
-    overflow: hidden;
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 250px;
 }
-.head-navigation{
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    clear: both;
+    background-color: rgb(77,88,99);
+}
+
+/* main part */
+.navigation-logo{
     height: 60px;
     background-color: rgb(128,164,236);
 }
-.head-navigation > img{
+
+.navigation-logo > img{
     width: 130px;
-    height: auto;
-    margin-left: 150px;
+    height: 130px;
+    margin-left: 15%;
     z-index: auto;
-    
+}
+
+.navigation-title{
+    overflow: hidden;
+    margin-left: 20%;
+    margin-bottom: 10px;
 }
 .navigation, .navigation li{
     list-style: none;
@@ -48,68 +65,40 @@
     text-decoration: none;
     /* border-right: 1px solid black; */
 }
+
 .container {
-    height:auto;
-    width: 1200px;
-    min-height: 700px;
-    /* max-width: 1300px; */
-    /* min-width: 760px; */
+    height:auto !important;
+    min-height: 100%;
+    width: 70%;
     margin: 0 auto;
-    background-color: white;
-    /* overflow: hidden */
+    background-color:whitesmoke;
+    overflow: hidden;
 }
 
-.footer{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(77,88,99);
-    margin: 0px;
-    text-decoration: none;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-}
-
-.copyright > a{
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer-block .footer-context {
-    width: 64%;
-    margin: 0 auto;
-    min-height: 200px;
-}
-.footer .footer-context dl {
-    width: 20%;
-    padding-left: 15px;
-    margin: 25px 0;
-    float: left;
-    border-left: 1px solid ;
-    min-height: 175px;
-    font-variant-caps: all-petite-caps;
-}
-.col {
-    margin-right: 5%;
-    float: left
-}
 .left-column {
-    height: auto;
-    width: 14%;
     min-height: 700px;
+    height: 100%;
+    width: 14%;
+    float: left;
+    margin-right: 20px;
     /* display: block; */
     background-color:rgb(177,207,231);
+    /* background-color: blueviolet; */
 }
+
 .sidebar-box {
+    height: auto;
     background:rgb(223,216,243);
     margin: 0 0 20px 0;
     padding: 4px;
 }
+
 .design {
     padding: 4px;
     margin: 0;
     overflow: hidden;
 }
+
 .design a {
     font-size: 15px;
     font-family:sans-serif;
@@ -122,6 +111,7 @@
     /* color:black; */
     color:gray;
 }
+
 h2.left {
     color: gray;
     /* background-color: rgb(207, 241, 10); */
@@ -133,15 +123,55 @@ h2.left {
     padding-top: 0;
     font-weight: 700;
 }
+
 .left_h2 {
     color: rgb(128,164,236);
 }
+
 .contentfont{
+    min-width: 900px;
+    max-width: fit-content;
     color: gray;
-    /* word-wrap: break-word;
-    word-break:break-all; */
+    word-wrap: break-word;
+    word-break:break-all;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.contentfont > h1{
+
+.contentfont > h1,h2,h3{
     color: rgb(128,164,236);
     font-variant-caps: all-petite-caps;
+}
+
+.contentfont > p{
+    font-size: large;
+    text-indent: 2em;
+}
+
+.footer .footer-context dl {
+    width: 20%;
+    padding-left: 15px;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid ;
+    min-height: 175px;
+    font-variant-caps: all-petite-caps;
+    color:floralwhite;
+
+}
+
+.footer-context a{
+    text-decoration: none;
+    color:floralwhite;
+}
+
+.copyright  a{
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.footer .footer-block .footer-context {
+    width: 64%;
+    margin: 0 auto;
+    min-height: 200px;
 }
